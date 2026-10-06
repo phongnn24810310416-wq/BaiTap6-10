@@ -1,0 +1,132 @@
+﻿namespace bai5._2
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.ComboBox cboCategory;
+        private System.Windows.Forms.Label lblAvailable;
+        private System.Windows.Forms.Label lblSelected;
+        private System.Windows.Forms.ListBox lstAvailableServices;
+        private System.Windows.Forms.ListBox lstSelectedServices;
+        private System.Windows.Forms.Button btnSelect;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnClearAll;
+        private System.Windows.Forms.Label lblTongTien;
+        private System.Windows.Forms.Label lblChietKhau;
+        private System.Windows.Forms.Label lblThanhTien;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.TextBox txtChietKhau;
+        private System.Windows.Forms.TextBox txtThanhTien;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && components != null)
+                components.Dispose();
+
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
+            this.lblAvailable = new System.Windows.Forms.Label();
+            this.lblSelected = new System.Windows.Forms.Label();
+            this.lstAvailableServices = new System.Windows.Forms.ListBox();
+            this.lstSelectedServices = new System.Windows.Forms.ListBox();
+            this.btnSelect = new System.Windows.Forms.Button();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.lblTongTien = new System.Windows.Forms.Label();
+            this.lblChietKhau = new System.Windows.Forms.Label();
+            this.lblThanhTien = new System.Windows.Forms.Label();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.txtChietKhau = new System.Windows.Forms.TextBox();
+            this.txtThanhTien = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+
+            this.lblCategory.AutoSize = true;
+            this.lblCategory.Location = new System.Drawing.Point(30, 25);
+            this.lblCategory.Text = "Loại dịch vụ:";
+
+            this.cboCategory.Location = new System.Drawing.Point(140, 22);
+            this.cboCategory.Size = new System.Drawing.Size(250, 23);
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCategory.SelectedIndexChanged += new System.EventHandler(this.cboCategory_SelectedIndexChanged);
+
+            this.lblAvailable.AutoSize = true;
+            this.lblAvailable.Location = new System.Drawing.Point(30, 65);
+            this.lblAvailable.Text = "Dịch vụ có sẵn:";
+
+            this.lblSelected.AutoSize = true;
+            this.lblSelected.Location = new System.Drawing.Point(350, 65);
+            this.lblSelected.Text = "Dịch vụ đã chọn:";
+
+            this.lstAvailableServices.Location = new System.Drawing.Point(30, 90);
+            this.lstAvailableServices.Size = new System.Drawing.Size(250, 160);
+            this.lstAvailableServices.DoubleClick += new System.EventHandler(this.lstAvailableServices_DoubleClick);
+
+            this.lstSelectedServices.Location = new System.Drawing.Point(350, 90);
+            this.lstSelectedServices.Size = new System.Drawing.Size(250, 160);
+
+            this.btnSelect.Location = new System.Drawing.Point(290, 100);
+            this.btnSelect.Size = new System.Drawing.Size(45, 35);
+            this.btnSelect.Text = ">";
+            this.btnSelect.Click += new System.EventHandler(this.btnSelect_Click);
+
+            this.btnRemove.Location = new System.Drawing.Point(290, 145);
+            this.btnRemove.Size = new System.Drawing.Size(45, 35);
+            this.btnRemove.Text = "<";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
+
+            this.btnClearAll.Location = new System.Drawing.Point(290, 190);
+            this.btnClearAll.Size = new System.Drawing.Size(45, 35);
+            this.btnClearAll.Text = "<<";
+            this.btnClearAll.Click += new System.EventHandler(this.btnClearAll_Click);
+
+            this.lblTongTien.AutoSize = true;
+            this.lblTongTien.Location = new System.Drawing.Point(30, 280);
+            this.lblTongTien.Text = "Tổng tiền chưa giảm:";
+
+            this.txtTongTien.Location = new System.Drawing.Point(180, 277);
+            this.txtTongTien.Size = new System.Drawing.Size(200, 22);
+
+            this.lblChietKhau.AutoSize = true;
+            this.lblChietKhau.Location = new System.Drawing.Point(30, 320);
+            this.lblChietKhau.Text = "Tỷ lệ chiết khấu (%):";
+
+            this.txtChietKhau.Location = new System.Drawing.Point(180, 317);
+            this.txtChietKhau.Size = new System.Drawing.Size(200, 22);
+            this.txtChietKhau.TextChanged += new System.EventHandler(this.txtChietKhau_TextChanged);
+
+            this.lblThanhTien.AutoSize = true;
+            this.lblThanhTien.Location = new System.Drawing.Point(30, 360);
+            this.lblThanhTien.Text = "Thành tiền thanh toán:";
+
+            this.txtThanhTien.Location = new System.Drawing.Point(180, 357);
+            this.txtThanhTien.Size = new System.Drawing.Size(200, 22);
+
+            this.ClientSize = new System.Drawing.Size(640, 410);
+            this.Controls.Add(this.lblCategory);
+            this.Controls.Add(this.cboCategory);
+            this.Controls.Add(this.lblAvailable);
+            this.Controls.Add(this.lblSelected);
+            this.Controls.Add(this.lstAvailableServices);
+            this.Controls.Add(this.lstSelectedServices);
+            this.Controls.Add(this.btnSelect);
+            this.Controls.Add(this.btnRemove);
+            this.Controls.Add(this.btnClearAll);
+            this.Controls.Add(this.lblTongTien);
+            this.Controls.Add(this.txtTongTien);
+            this.Controls.Add(this.lblChietKhau);
+            this.Controls.Add(this.txtChietKhau);
+            this.Controls.Add(this.lblThanhTien);
+            this.Controls.Add(this.txtThanhTien);
+            this.Name = "Form1";
+            this.Text = "Bảng tính tiền dịch vụ và chiết khấu";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+    }
+}

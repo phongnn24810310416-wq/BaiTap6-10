@@ -1,0 +1,152 @@
+﻿namespace bai5
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        private System.Windows.Forms.Label lblTenDangNhap;
+        private System.Windows.Forms.Label lblMatKhau;
+        private System.Windows.Forms.Label lblXacNhan;
+        private System.Windows.Forms.Label lblNgaySinh;
+        private System.Windows.Forms.Label lblGioiTinh;
+        private System.Windows.Forms.TextBox txtTenDangNhap;
+        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtXacNhan;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.RadioButton rdoNam;
+        private System.Windows.Forms.RadioButton rdoNu;
+        private System.Windows.Forms.CheckBox chkDieuKhoan;
+        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.Button btnLamMoi;
+        private System.Windows.Forms.ErrorProvider epCheck;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+                components.Dispose();
+
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.lblTenDangNhap = new System.Windows.Forms.Label();
+            this.lblMatKhau = new System.Windows.Forms.Label();
+            this.lblXacNhan = new System.Windows.Forms.Label();
+            this.lblNgaySinh = new System.Windows.Forms.Label();
+            this.lblGioiTinh = new System.Windows.Forms.Label();
+            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtXacNhan = new System.Windows.Forms.TextBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.rdoNam = new System.Windows.Forms.RadioButton();
+            this.rdoNu = new System.Windows.Forms.RadioButton();
+            this.chkDieuKhoan = new System.Windows.Forms.CheckBox();
+            this.btnDangKy = new System.Windows.Forms.Button();
+            this.btnLamMoi = new System.Windows.Forms.Button();
+            this.epCheck = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.epCheck)).BeginInit();
+            this.SuspendLayout();
+
+            // lblTenDangNhap
+            this.lblTenDangNhap.AutoSize = true;
+            this.lblTenDangNhap.Location = new System.Drawing.Point(40, 40);
+            this.lblTenDangNhap.Text = "Tên đăng nhập:";
+
+            // txtTenDangNhap
+            this.txtTenDangNhap.Location = new System.Drawing.Point(160, 37);
+            this.txtTenDangNhap.Size = new System.Drawing.Size(220, 22);
+
+            // lblMatKhau
+            this.lblMatKhau.AutoSize = true;
+            this.lblMatKhau.Location = new System.Drawing.Point(40, 80);
+            this.lblMatKhau.Text = "Mật khẩu:";
+
+            // txtMatKhau
+            this.txtMatKhau.Location = new System.Drawing.Point(160, 77);
+            this.txtMatKhau.Size = new System.Drawing.Size(220, 22);
+            this.txtMatKhau.UseSystemPasswordChar = true;
+
+            // lblXacNhan
+            this.lblXacNhan.AutoSize = true;
+            this.lblXacNhan.Location = new System.Drawing.Point(40, 120);
+            this.lblXacNhan.Text = "Xác nhận mật khẩu:";
+
+            // txtXacNhan
+            this.txtXacNhan.Location = new System.Drawing.Point(160, 117);
+            this.txtXacNhan.Size = new System.Drawing.Size(220, 22);
+            this.txtXacNhan.UseSystemPasswordChar = true;
+
+            // lblNgaySinh
+            this.lblNgaySinh.AutoSize = true;
+            this.lblNgaySinh.Location = new System.Drawing.Point(40, 160);
+            this.lblNgaySinh.Text = "Ngày sinh:";
+
+            // dtpNgaySinh
+            this.dtpNgaySinh.Location = new System.Drawing.Point(160, 157);
+            this.dtpNgaySinh.Size = new System.Drawing.Size(220, 22);
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+
+            // lblGioiTinh
+            this.lblGioiTinh.AutoSize = true;
+            this.lblGioiTinh.Location = new System.Drawing.Point(40, 200);
+            this.lblGioiTinh.Text = "Giới tính:";
+
+            // rdoNam
+            this.rdoNam.AutoSize = true;
+            this.rdoNam.Location = new System.Drawing.Point(160, 198);
+            this.rdoNam.Text = "Nam";
+
+            // rdoNu
+            this.rdoNu.AutoSize = true;
+            this.rdoNu.Location = new System.Drawing.Point(230, 198);
+            this.rdoNu.Text = "Nữ";
+
+            // chkDieuKhoan
+            this.chkDieuKhoan.AutoSize = true;
+            this.chkDieuKhoan.Location = new System.Drawing.Point(40, 240);
+            this.chkDieuKhoan.Text = "Tôi đồng ý điều khoản dịch vụ";
+
+            // btnDangKy
+            this.btnDangKy.Location = new System.Drawing.Point(120, 285);
+            this.btnDangKy.Size = new System.Drawing.Size(100, 35);
+            this.btnDangKy.Text = "Đăng Ký";
+            this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
+
+            // btnLamMoi
+            this.btnLamMoi.Location = new System.Drawing.Point(240, 285);
+            this.btnLamMoi.Size = new System.Drawing.Size(100, 35);
+            this.btnLamMoi.Text = "Làm Mới";
+            this.btnLamMoi.UseVisualStyleBackColor = true;
+            this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
+
+            // epCheck
+            this.epCheck.ContainerControl = this;
+
+            // Form1
+            this.ClientSize = new System.Drawing.Size(430, 360);
+            this.Controls.Add(this.lblTenDangNhap);
+            this.Controls.Add(this.txtTenDangNhap);
+            this.Controls.Add(this.lblMatKhau);
+            this.Controls.Add(this.txtMatKhau);
+            this.Controls.Add(this.lblXacNhan);
+            this.Controls.Add(this.txtXacNhan);
+            this.Controls.Add(this.lblNgaySinh);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.lblGioiTinh);
+            this.Controls.Add(this.rdoNam);
+            this.Controls.Add(this.rdoNu);
+            this.Controls.Add(this.chkDieuKhoan);
+            this.Controls.Add(this.btnDangKy);
+            this.Controls.Add(this.btnLamMoi);
+            this.Name = "Form1";
+            this.Text = "Đăng ký tài khoản";
+
+            ((System.ComponentModel.ISupportInitialize)(this.epCheck)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+    }
+}

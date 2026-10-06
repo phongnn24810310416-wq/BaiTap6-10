@@ -1,0 +1,156 @@
+﻿namespace bai5._3
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.GroupBox grpThongTin;
+        private System.Windows.Forms.GroupBox grpChucNang;
+        private System.Windows.Forms.Label lblProductId;
+        private System.Windows.Forms.Label lblProductName;
+        private System.Windows.Forms.Label lblUnitPrice;
+        private System.Windows.Forms.Label lblQuantity;
+        private System.Windows.Forms.Label lblCategory;
+        private System.Windows.Forms.TextBox txtProductId;
+        private System.Windows.Forms.TextBox txtProductName;
+        private System.Windows.Forms.TextBox txtUnitPrice;
+        private System.Windows.Forms.TextBox txtQuantity;
+        private System.Windows.Forms.ComboBox cboCategory;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.DataGridView dgvProducts;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && components != null)
+                components.Dispose();
+
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.grpThongTin = new System.Windows.Forms.GroupBox();
+            this.grpChucNang = new System.Windows.Forms.GroupBox();
+            this.lblProductId = new System.Windows.Forms.Label();
+            this.lblProductName = new System.Windows.Forms.Label();
+            this.lblUnitPrice = new System.Windows.Forms.Label();
+            this.lblQuantity = new System.Windows.Forms.Label();
+            this.lblCategory = new System.Windows.Forms.Label();
+            this.txtProductId = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.txtUnitPrice = new System.Windows.Forms.TextBox();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.cboCategory = new System.Windows.Forms.ComboBox();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.dgvProducts = new System.Windows.Forms.DataGridView();
+
+            this.grpThongTin.SuspendLayout();
+            this.grpChucNang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            this.SuspendLayout();
+
+            this.grpThongTin.Text = "Thông tin sản phẩm";
+            this.grpThongTin.Location = new System.Drawing.Point(20, 15);
+            this.grpThongTin.Size = new System.Drawing.Size(650, 170);
+
+            this.lblProductId.Text = "Mã SP:";
+            this.lblProductId.Location = new System.Drawing.Point(20, 30);
+            this.lblProductId.AutoSize = true;
+
+            this.txtProductId.Location = new System.Drawing.Point(120, 27);
+            this.txtProductId.Size = new System.Drawing.Size(180, 22);
+
+            this.lblProductName.Text = "Tên SP:";
+            this.lblProductName.Location = new System.Drawing.Point(330, 30);
+            this.lblProductName.AutoSize = true;
+
+            this.txtProductName.Location = new System.Drawing.Point(410, 27);
+            this.txtProductName.Size = new System.Drawing.Size(200, 22);
+
+            this.lblUnitPrice.Text = "Đơn giá:";
+            this.lblUnitPrice.Location = new System.Drawing.Point(20, 70);
+            this.lblUnitPrice.AutoSize = true;
+
+            this.txtUnitPrice.Location = new System.Drawing.Point(120, 67);
+            this.txtUnitPrice.Size = new System.Drawing.Size(180, 22);
+
+            this.lblQuantity.Text = "Số lượng:";
+            this.lblQuantity.Location = new System.Drawing.Point(330, 70);
+            this.lblQuantity.AutoSize = true;
+
+            this.txtQuantity.Location = new System.Drawing.Point(410, 67);
+            this.txtQuantity.Size = new System.Drawing.Size(200, 22);
+
+            this.lblCategory.Text = "Danh mục:";
+            this.lblCategory.Location = new System.Drawing.Point(20, 110);
+            this.lblCategory.AutoSize = true;
+
+            this.cboCategory.Location = new System.Drawing.Point(120, 107);
+            this.cboCategory.Size = new System.Drawing.Size(180, 23);
+            this.cboCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+
+            this.grpThongTin.Controls.Add(this.lblProductId);
+            this.grpThongTin.Controls.Add(this.txtProductId);
+            this.grpThongTin.Controls.Add(this.lblProductName);
+            this.grpThongTin.Controls.Add(this.txtProductName);
+            this.grpThongTin.Controls.Add(this.lblUnitPrice);
+            this.grpThongTin.Controls.Add(this.txtUnitPrice);
+            this.grpThongTin.Controls.Add(this.lblQuantity);
+            this.grpThongTin.Controls.Add(this.txtQuantity);
+            this.grpThongTin.Controls.Add(this.lblCategory);
+            this.grpThongTin.Controls.Add(this.cboCategory);
+
+            this.grpChucNang.Text = "Chức năng";
+            this.grpChucNang.Location = new System.Drawing.Point(20, 195);
+            this.grpChucNang.Size = new System.Drawing.Size(650, 65);
+
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Location = new System.Drawing.Point(30, 25);
+            this.btnThem.Size = new System.Drawing.Size(100, 30);
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Location = new System.Drawing.Point(150, 25);
+            this.btnSua.Size = new System.Drawing.Size(100, 30);
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Location = new System.Drawing.Point(270, 25);
+            this.btnXoa.Size = new System.Drawing.Size(100, 30);
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.Location = new System.Drawing.Point(390, 25);
+            this.btnTimKiem.Size = new System.Drawing.Size(120, 30);
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+
+            this.grpChucNang.Controls.Add(this.btnThem);
+            this.grpChucNang.Controls.Add(this.btnSua);
+            this.grpChucNang.Controls.Add(this.btnXoa);
+            this.grpChucNang.Controls.Add(this.btnTimKiem);
+
+            this.dgvProducts.Location = new System.Drawing.Point(20, 280);
+            this.dgvProducts.Size = new System.Drawing.Size(650, 220);
+            this.dgvProducts.AutoGenerateColumns = true;
+            this.dgvProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
+
+            this.ClientSize = new System.Drawing.Size(700, 520);
+            this.Controls.Add(this.grpThongTin);
+            this.Controls.Add(this.grpChucNang);
+            this.Controls.Add(this.dgvProducts);
+            this.Text = "Quản lý danh sách sản phẩm";
+
+            this.grpThongTin.ResumeLayout(false);
+            this.grpThongTin.PerformLayout();
+            this.grpChucNang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            this.ResumeLayout(false);
+        }
+    }
+}

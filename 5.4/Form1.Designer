@@ -1,0 +1,100 @@
+﻿namespace bai5._4
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TreeView tvDepartments;
+        private System.Windows.Forms.ListView lsvEmployees;
+        private System.Windows.Forms.ComboBox cboView;
+        private System.Windows.Forms.Label lblView;
+        private System.Windows.Forms.ColumnHeader colMa;
+        private System.Windows.Forms.ColumnHeader colHoTen;
+        private System.Windows.Forms.ColumnHeader colChucVu;
+        private System.Windows.Forms.ColumnHeader colNgay;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && components != null)
+                components.Dispose();
+
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.tvDepartments = new System.Windows.Forms.TreeView();
+            this.lsvEmployees = new System.Windows.Forms.ListView();
+            this.cboView = new System.Windows.Forms.ComboBox();
+            this.lblView = new System.Windows.Forms.Label();
+            this.colMa = new System.Windows.Forms.ColumnHeader();
+            this.colHoTen = new System.Windows.Forms.ColumnHeader();
+            this.colChucVu = new System.Windows.Forms.ColumnHeader();
+            this.colNgay = new System.Windows.Forms.ColumnHeader();
+
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.SuspendLayout();
+
+            this.splitContainer1.Location = new System.Drawing.Point(15, 55);
+            this.splitContainer1.Size = new System.Drawing.Size(870, 480);
+            this.splitContainer1.SplitterDistance = 250;
+
+            this.tvDepartments.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tvDepartments.HideSelection = false;
+            this.tvDepartments.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.tvDepartments_AfterSelect);
+
+            this.lsvEmployees.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lsvEmployees.View = System.Windows.Forms.View.Details;
+            this.lsvEmployees.FullRowSelect = true;
+            this.lsvEmployees.GridLines = true;
+            this.lsvEmployees.Columns.AddRange(new System.Windows.Forms.ColumnHeader[]
+            {
+                this.colMa,
+                this.colHoTen,
+                this.colChucVu,
+                this.colNgay
+            });
+
+            this.colMa.Text = "Mã NV";
+            this.colMa.Width = 100;
+
+            this.colHoTen.Text = "Họ Tên";
+            this.colHoTen.Width = 200;
+
+            this.colChucVu.Text = "Chức vụ";
+            this.colChucVu.Width = 180;
+
+            this.colNgay.Text = "Ngày vào làm";
+            this.colNgay.Width = 150;
+
+            this.splitContainer1.Panel1.Controls.Add(this.tvDepartments);
+            this.splitContainer1.Panel2.Controls.Add(this.lsvEmployees);
+
+            this.lblView.AutoSize = true;
+            this.lblView.Location = new System.Drawing.Point(15, 20);
+            this.lblView.Text = "Chế độ xem:";
+
+            this.cboView.Location = new System.Drawing.Point(100, 17);
+            this.cboView.Size = new System.Drawing.Size(150, 23);
+            this.cboView.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboView.SelectedIndexChanged += new System.EventHandler(this.cboView_SelectedIndexChanged);
+
+            this.ClientSize = new System.Drawing.Size(900, 560);
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.lblView);
+            this.Controls.Add(this.cboView);
+            this.Text = "Quản lý danh sách nhân viên";
+
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+    }
+}
